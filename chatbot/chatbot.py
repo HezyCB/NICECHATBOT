@@ -73,7 +73,7 @@ class Chatbot:
         self.CONFIG_VERSION = '0.5'
         self.TEST_IN_NAME = 'data' + os.sep + 'test' + os.sep + 'samples.txt'
         self.TEST_OUT_SUFFIX = '_predictions.txt'
-        self.SENTENCES_PREFIX = ['Q: ', 'A: ']
+        self.SENTENCES_PREFIX = ['Ben: ', 'You: ']
 
     @staticmethod
     def parseArgs(args):
@@ -140,7 +140,7 @@ class Chatbot:
         """
         Launch the training and/or the interactive mode
         """
-        print('Welcome to DeepQA v0.1 !')
+        print('Welcome to Ben v0.1 !')
         print()
         print('TensorFlow detected: v{}'.format(tf.__version__))
 
@@ -491,7 +491,7 @@ class Chatbot:
                     os.remove(f)
 
         else:
-            print('No previous model found, starting from clean directory: {}'.format(self.modelDir))
+            print('No previous model of Ben found, starting from clean directory: {}'.format(self.modelDir))
 
     def _saveSession(self, sess):
         """ Save the model parameters and the variables
