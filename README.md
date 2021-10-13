@@ -1,3 +1,3 @@
 # BEN.AI
 
-AI made for my friend Ben who passed in December 2020
+AI for my friend Ben who passed in December 2020
